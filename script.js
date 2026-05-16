@@ -19,22 +19,22 @@ import {
 }
 from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
-/* =========================
-FIREBASE CONFIG
-PASTE YOUR FIREBASE CONFIG HERE
-========================= */
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-analytics.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+    apiKey: "AIzaSyAZs1x8HcO719t0raLTnQBClqYn-qo6H4U",
+    authDomain: "rahameeru-5591b.firebaseapp.com",
+    projectId: "rahameeru-5591b",
+    storageBucket: "rahameeru-5591b.firebasestorage.app",
+    messagingSenderId: "613021493393",
+    appId: "1:613021493393:web:0b8b5b74253b004b46b730",
+    measurementId: "G-ZS8K8RXVC2"
 };
 
-/* ========================= */
-
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
 const app = initializeApp(firebaseConfig);
 
 const db = getFirestore(app);
